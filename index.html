@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="pr-BR">
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--Link Bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!--Link Icones-->
+    <script src="https://kit.fontawesome.com/1758c2510a.js" crossorigin="anonymous"></script>
+    
+    <!--Link Fontes-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+    
+    <!--Link  Javascript-->
+    <script type="text/javascript" src="js/scripts.js"></script>
+    
+    <!--Link Css-->
+    <link rel="stylesheet" href="css/estilo.css">
+
+    <title>Projeto de Extensão</title>
+
+  </head>
+  <body>
+
+    <!--Inicio do Header/Cabeçalho-->
+    <header id="cabecalho" class="sticky-top">
+        <nav id="barra-navegacao" class="navbar navbar-expand-lg navbar-light">
+            <div class="container p-2">
+                
+                <a id="logo" class="navbar-brand ">
+                    <img src="imgs/logo.png" alt="Logo do Istituto Federal de São Paulo" >
+                </a>
+
+                <button class="navbar-toggler" data-toggle="collapse" data-target="#barra-navegacao-id">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse " id="barra-navegacao-id">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#cabecalho" class="text-light nav-link">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#cursos" class="text-light nav-link">Cursos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#sobreprojeto" class="text-light nav-link">Sobre</a>
+                        </li>
+                        <li id="btn-criarconta" class="nav-item">
+                            <a class="btn btn-primary" href="#" class="text-light nav-link">Registrar</a>
+                        </li>
+                        <li id="btn-entrar" class="nav-item ">
+                            <a class="btn btn-secondary" href="#" class="text-light nav-link">Entrar</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+    </header> <!--Fim do Header/Cabeçalho-->
+
+    <main>
+        
+        <!--Inicio da section principl-->
+        <section id="principal" class="background-color-primary w-100">
+            <div id="capa-principal">
+                <div id="texto-principal" class="container p-4 text-center my-0 mx-auto">
+                    <h1>Cursos de Programação Gratuitos</h1>
+                    <p>
+                        Nos da EducaTech estamos comprometidos a te ensinar programação de um jeito fácil e objetivo
+                    </p>
+                    <a class="btn btn-secondary fw-bold px-3 py-2 mb-2" id="btn-texto-principal" href="#">Ver Cursos</a>
+                </div>
+            </div>
+        </section> <!--Fim da section principl-->
+
+        <!--Inicio da section cursos-->
+        <section id="cursos" class="text-center">
+            <h2>Nossos Cursos</h2>
+            <p>
+                Aqui você encontra um breve resumo sobre os cursos oferecidos pela EducaTech
+            </p>
+
+            <!--Inicio do fundo-flex-cursos-->
+            <div id="fundo-flex-cursos" class="d-flex justify-content-around align-items-center"> 
+
+    
+                <article id="curso1">
+                    <img src="imgs/infobasica.png" alt="Curso de Informática Básica">
+                    <h1>Informática Básica 01</h1>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, quisquam officiis beatae, at pariatur minima rem fugiat tempora.
+                    </p>
+                    <a class="btn btn-primary fw-bold" id="btn-curso2" href="">Ver mais</a>
+                </article>
+                <article id="curso2">
+                    <img src="imgs/Estruturada.png" alt="Curso de Programação Estruturada em C++">
+                    <h1>Programação Estruturada</h1>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, quisquam officiis beatae, at pariatur minima rem fugiat tempora.
+                    </p>
+                    <a class="btn btn-primary fw-bold" id="btn-curso1" href="">Ver mais</a>
+                </article>
+                <article id="curso3">
+                    <img src="imgs/logica.png" alt="Curso de Lógica de Programação">
+                    <h1>Lógica de Programação</h1>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, quisquam officiis beatae, at pariatur minima rem fugiat tempora.
+                    </p>
+                    <a class="btn btn-primary fw-bold" id="btn-curso3" href="">Ver mais</a>
+                </article>
+
+            </div> <!--Fim do fundo-flex-cursos-->
+
+        </section> <!--Fim da section cursos-->
+
+        <!--Inicio da section sobreprojeto-->
+        <section id="sobreprojeto" class="text-center p-5">
+            <h2>Sobre o Projeto</h2>
+
+            <!--Inicio do fundo-flex-sobreprojeto-->
+            <div id="fundo-flex-sobreprojeto" class="d-flex justify-content-around align-items-center"> 
+
+                <div id="img-sobreprojeto">
+                    <img src="imgs/ifsp.jpg" alt="Foto do IFSP de Votuporanga">
+                </div>
+                <div id="texto-sobreprojetos">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem sunt aperiam exercitationem repudiandae soluta quo adipisci id, alias ducimus reiciendis eveniet facere aliquam iure neque, atque saepe! Itaque, incidunt voluptatibus!
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati id officiis assumenda! Error quis animi tempore exercitationem sunt nobis saepe officia eligendi corrupti quos odit, veritatis maiores. Rem, consectetur sapiente.
+                    </p>
+
+                    <a class="p-3 btn btn-secondary fw-bold" id="btn-maisobre-ifsp" href="https://vtp.ifsp.edu.br/" target="_blank">Acessar IFSP</a>
+                </div>
+
+            </div> <!--Fim do fundo-flex-sobreprojeto-->
+
+        </section> <!--Fim da section sobreprojeto-->
+
+    </main>
+
+    <footer>
+        <div id="fundo-flex-footer" class="text-center w-100">
+            <p><i class="fa-brands fa-instagram"></i> EducaTech</p>
+            
+            <p>© 2024 Educatech. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+    
+
+    <!--Link Bootstrap-->
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  </body>
+</html>

@@ -1,0 +1,230 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: "Inria Sans", sans-serif;
+    height: 100%;
+}
+
+/*Inicio header cabecalho*/
+
+#barra-navegacao{
+    background-color: #1f1f20;
+}
+
+#barra-navegacao-id ul li a{
+    font-size: 1.2em;
+}
+
+#logo{
+    width: 30%;
+}
+
+#logo img{
+    width: 100%;
+}
+
+#btn-criarconta{
+    margin: 0 10px;
+}
+
+#btn-entrar{
+    margin: 0 10px;
+}
+
+#barra-navegacao button{
+    border: 2px solid white;
+    background-color: #36789c;
+}
+
+.navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.1); /* Muda a cor da borda, se necessário */
+}
+
+/*Final header cabecalho*/
+
+/*Inicio section principal*/
+
+#principal{
+    
+    background-image: url('../imgs/fundo02.jpg');
+    background-position: top;
+    background-repeat:no-repeat;
+    background-size:cover;
+    height: 580px;
+}
+
+#capa-principal{
+    background-color: #2b4c7e50;
+    width: 100%;
+    height: 580px;  
+    padding-top: 100px;
+}
+
+#texto-principal{
+    width: 90%;
+    background-color: #1f1f20ea;
+    border-radius: 10px;
+    color: whitesmoke;
+}
+
+#texto-principal h1{
+    font-size: 4em;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+#texto-principal p{
+    font-size: 1.5em;
+    font-style: italic;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+/*Final section principal*/
+
+/*Inicio section cursos*/
+
+#cursos{
+    padding: 20px 20px 120px 20px;
+}
+
+#cursos h2{
+    font-size: 3.5em;
+    font-weight: 600;
+    color: #1f1f20;
+}
+
+#cursos p{
+    font-size: 1em;
+    font-style: italic;
+    color: #1f1f20;
+    margin-bottom: 50px;
+}
+
+#fundo-flex-cursos article{
+    width: 32%;
+    background-color: #dce0e6;
+    padding: 10px 10px 20px 10px;
+    border-radius: 10px;
+}
+
+#fundo-flex-cursos article p{
+    line-height: 25px;
+    letter-spacing: 1px;
+}
+
+/*Final section cursos*/
+
+/*Inicio section sobreprojeto*/
+
+#sobreprojeto{
+    background-color: #606d80;
+    color: white;
+}
+
+#sobreprojeto h2{
+    font-size: 3.5em;
+    font-weight: 600;
+}
+
+#img-sobreprojeto{
+    width: 40%;
+}
+
+#img-sobreprojeto img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+#texto-sobreprojetos{
+    width: 60%;
+    text-align: justify;
+    padding: 80px;
+}
+
+#texto-sobreprojetos p{
+    font-size: 1.25em;
+    margin-bottom: 50px;
+}
+
+
+/*Final section sobreprojeto*/
+
+/*Inicio do footer*/
+
+footer{
+    width: 100%;
+    background-color: #1f1f20;
+    padding: 35px;
+    color: #dce0e6;
+}
+
+#fundo-flex-footer p{
+    cursor: pointer;
+    margin: 0 20px;
+}
+
+#fundo-flex-footer p:hover{
+    color: #2B4C7E;
+}
+
+/*Fim do footer*/
+
+/*Media Queries*/
+
+@media (width < 1200px){
+    #fundo-flex-sobreprojeto{flex-direction: column;}
+    #img-sobreprojeto{width: 60%;order: 2;}
+    #texto-sobreprojetos{
+        padding-top: 30px;
+        padding-bottom: 50px;
+        width: 90%;
+        text-align: center;
+    }
+}
+@media (width < 992px){
+    #btn-criarconta{margin: 10px 0;}
+    #btn-entrar{margin: 10px 0;}
+    #barra-navegacao-id ul{text-align: center;}
+    #logo{width: 45%;}
+    #fundo-flex-cursos{flex-direction: column;}
+    #fundo-flex-cursos article{width: 80%;margin: 20px 0;}
+}
+@media (width < 768px){
+    #principal{height: 650px;}
+    #capa-principal{height: 650px;}
+    #logo{width: 60%;}
+    #texto-principal h1{font-size: 3.5em;letter-spacing: 1px;}
+    #texto-principal p{font-size: 1.3em;}
+    #texto-sobreprojetos{width: 120%;}
+    #img-sobreprojeto{width: 80%;}
+}
+@media (width < 500px){
+    #texto-principal h1{font-size: 3em;letter-spacing: 0;}
+    #texto-principal p{font-size: 1em;}
+    #logo{width: 65%;}
+    #fundo-flex-cursos article{width: 90%;}
+    #img-sobreprojeto{width: 90%;}
+}
+@media (width < 450px){
+    #texto-sobreprojetos{text-align: left;width: 137%;}
+    #sobreprojeto h2{text-align: left;width: 90%;}
+}
+@media (width < 380px){
+    #texto-principal h1{font-size: 2.5em;}
+    #texto-principal p{font-size: 1em;}
+    #fundo-flex-cursos article{width: 100%;}
+    #texto-sobreprojetos{text-align: left;width: 160%;}
+    #img-sobreprojeto{width: 100%;}
+}
+@media (width < 320px){
+    #texto-principal h1{font-size: 2.2em;}
+    #texto-principal p{font-size: 0.9em;}
+}
