@@ -1,12 +1,7 @@
 <?php 
 
-
-    //inicia a sessao na pagina
-    session_start();
-
-    include "erros.php";//inclue o arquivo para mostrar erros
-
-    require_once "conexao.php";//solicita o arquivo de conexão do banco de dados
+    include('protecao.php'); //inclui o arquivo que verifica se há sessao ativa
+    //caso nao tenha, ele nega o acesso a pagina
 
 ?>
 
@@ -83,18 +78,11 @@
         
             <div id="bloco-cadastro" class="container p-4 text-center my-0 mx-auto">
 
-                <form name="signup" method="POST" action="cadastro_func.php" enctype="multipart/form-data"> 
-                    <label id="nome">Nome: </label>
-                    <input id="nome" name="cadNome" type="text"><br>
-                    <label id="email">E-mail: </label>
-                    <input id="email" name="cadEmail" type="email"><br>
-                    <label id="senha">Senha: </label>
-                    <input id="senha" name="cadSenha" type="password"><br>
-                    <label id="CPF">CPF: </label>
-                    <input id="CPF" name="cadCpf"type="text" class="CPF"><br>
+                Bem vindo ao painel, <?php echo $_SESSION['nome']; ?>
 
-                    <input id="botaoEnviar" type="submit" value="Cadastrar">
-                </form>
+                <p>
+                    <a href="deslogar.php"> SAIR </a>
+                </p>
 
             </div>
 

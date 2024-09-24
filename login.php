@@ -1,12 +1,10 @@
 <?php 
 
+    session_start();//inicia a sessao na pagina
 
-    //inicia a sessao na pagina
-    session_start();
+    include "erros.php";//inclui o arquivo de erros
 
-    include "erros.php";//inclue o arquivo para mostrar erros
-
-    require_once "conexao.php";//solicita o arquivo de conexão do banco de dados
+    require_once "conexao.php";//solicita o arquivo de conexão com o banco de dados
 
 ?>
 
@@ -83,17 +81,12 @@
         
             <div id="bloco-cadastro" class="container p-4 text-center my-0 mx-auto">
 
-                <form name="signup" method="POST" action="cadastro_func.php" enctype="multipart/form-data"> 
-                    <label id="nome">Nome: </label>
-                    <input id="nome" name="cadNome" type="text"><br>
-                    <label id="email">E-mail: </label>
-                    <input id="email" name="cadEmail" type="email"><br>
+                <form name="login" method="POST" action="login_func.php" enctype="multipart/form-data"> 
+                    <label id="login">CPF: </label>
+                    <input id="login" name="login" type="text"><br>
                     <label id="senha">Senha: </label>
-                    <input id="senha" name="cadSenha" type="password"><br>
-                    <label id="CPF">CPF: </label>
-                    <input id="CPF" name="cadCpf"type="text" class="CPF"><br>
-
-                    <input id="botaoEnviar" type="submit" value="Cadastrar">
+                    <input id="senha" name="loginSenha" type="text"><br>
+                    <input id="botaoEnviar" type="submit" name="entrar" value="Login">
                 </form>
 
             </div>
